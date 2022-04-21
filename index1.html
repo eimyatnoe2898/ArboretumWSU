@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .responsive
+{
+    width: 100%;
+    height: 20%;
+}
+
+#Logo-1
+{
+    width: 30%;
+    height:auto;
+    align-items: center;
+    /* position:absolute; */
+    width: 150px;
+    height: 55px;
+    left: 109px;
+    top: 15px;
+    display:block
+    
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #0c0808;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+
+.topnav a.active {
+  background-color: #fdfffe;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #CFDBAE;
+  padding: 60px;
+  flex: 5%;
+  /* margin: 50px; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  margin-right:50px;
+  border-radius: 30em;
+}
+
+.flex-item-middle {
+  background-color: #CFDBAE;
+  padding: 60px;
+  flex: 5%;
+  /* margin:50px; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  margin-right:50px;
+
+  border-radius: 30em;
+}
+
+.flex-item-right {
+  background-color: #CFDBAE;
+  padding: 60px;
+  flex: 5%;
+  /* margin: 50px; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  margin-right:50px;
+  border-radius: 30em;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <div class="topnav-logo">
+        <a href="index1.html" class="active"><img src = "img/Arboretum Images/App images/logos/Arboretum logo high resolution_crop.jpg" alt = "Main Logo" id = "Logo-1">Home</a>
+    </div>
+    <a href="https://www.winona.edu/m/arboretum/directory.asp?t=2">Tour Directory</a>
+    <a href="https://www.winona.edu/m/arboretum/default.asp">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div style="padding-left:16px;text-align: center;">
+  <h1>Welcome to WSU Arboretum</h1>
+  <p>Where you can explore:</p>
+</div>
+
+<!-- <div class="flex-container">
+    <div class="flex-child green">
+        Rocks
+    </div>
+    <div class="flex-child blue" >
+        Plants
+    </div>
+    <div class="flex-child red">
+        Insects
+    </div>
+  </div> -->
+
+  <div class="background_wrapper">
+    <img src = "img/plants.gif" alt="Nature" class="responsive">
+    <div class = "text-block">
+      <!-- <h1>Welcome to WSU Arboretum</h1> -->
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="flex-item-left">Trees</div>
+    <div class="flex-item-middle">Insects</div>
+    <div class = "flex-item-right">Rocks</div>
+  </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+
+  .hero__video {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 101%;
+    min-height: 100%;
+    transform: translate(-50%,-50%);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 41.0625rem;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 41.0625rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    font-family: Poppins,sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    color: rgb(var(--black));
+}
+
+.tour_panel
+{
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  /* min-height: 41.0625rem; */
+}
+:root {
+    --purple-dark: 60,6,128;
+    --purple: 75,8,161;
+    --purple-light: 132,86,190;
+    --blue: 60,113,184;
+    --aqua: 143,216,205;
+    --green: 123,162,27;
+    --lime: 199,222,52;
+    --orange: 237,76,37;
+    --yellow: 255,194,20;
+    --grey: 241,242,243;
+    --grey-light: 151,151,151;
+    --black: 0,0,0;
+    --white: 255,255,255;
+    --transparent: rgba(0, 0, 0, 0);
+    --shadow: 0 0 1.25rem 0 rgba(var(--black), 0.5);
+    --heading: 'Alegreya Sans',sans-serif;
+    --body: 'Inter',sans-serif;
+    --logo: 'optimabold';
+    --transition-duration: 250ms;
+    --transition-easing: ease;
+    --transition: var(--transition-duration) var(--transition-easing);
+}
+html {
+    font-size: 16px;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+    .collapsible {
+        background-color: rgb(99, 8, 218);
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: rgb(218, 213, 213);
+      }
+      
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+
+.flex-container {
+    color: rgb(75,8,161);
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    }
+
+.flex-container button:hover{
+  
+    background: #ddd;
+    color: #444;
+    /* transform: translateY(-10px); */
+  
+}
+
+    .flex-item-left {
+    /* background-color: rgb(75,8,161); */
+    background-color: #C7DE34;
+    padding: 60px;
+    flex: 5%;
+    /* margin: 50px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-right:50px;
+    border-radius: 30em;
+    }
+
+    .flex-item-middle {
+      background-color: #C7DE34;
+    /* background-color: rgb(75,8,161); */
+    padding: 60px;
+    flex: 5%;
+    /* margin:50px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-right:50px;
+
+    border-radius: 30em;
+    }
+
+    .flex-item-right {
+      background-color: #C7DE34;
+    /* background-color: rgb(75,8,161); */
+    padding: 60px;
+    flex: 5%;
+    /* margin: 50px; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    margin-right:50px;
+    border-radius: 30em;
+    }
+
+    .AlphabetNav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      /* // Shorthand for flex-wrap and flex-direction */
+      flex-flow: wrap row;
+      padding: .5rem;
+      background: ghostwhite;
+    }
+    
+    .AlphabetNav a {
+      display: flex;
+      /* // Center align the letters within each box */
+      justify-content: center;
+      padding: .5em;
+      border-radius: 8px;
+      font-size: 1.2em;
+      line-height: 1;
+      font-weight: 500;
+      text-decoration: none;
+      color: darkgray;
+    }
+    
+    .AlphabetNav a:hover {
+      background: #ddd;
+      color: #444;
+    }
+    
+    .AlphabetNav .active {
+      background: #f46353;
+      color: white;
+    }
+    
+
+    @media (max-width: 800px) {
+      .flex-container {
+        flex-direction: column;
+      }
+    }
